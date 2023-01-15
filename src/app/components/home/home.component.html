@@ -1,0 +1,41 @@
+
+<div class="car-shop-div">
+  <h1>Find Best Car For You - Auto Select</h1>
+  <p>Find a car that meets all of your needs.</p>
+</div>
+
+<form (submit)="searchCars(searchMake.value)">
+  <input type="text" #searchMake placeholder="Search over 10,000+ cars">
+  <button type="submit">Search</button>
+  <button type="reset" (click)="resetCars()">Reset</button>
+</form>
+
+<select (change)="sortCars($event.target.value)">
+  <option value="year">Sort by year</option>
+  <option value="price">Sort by price</option>
+</select>
+
+
+<div class="cars">  
+ 
+  <ng-container *ngFor="let car of car">
+    <div class="car">
+      <div  (click)="openCarDetails(car.id)" class="car-thumb-container">
+        <img
+         *ngIf="car.make"
+          src="{{ car.imageUrl }}"
+          alt="thumbnail"
+          class="car-thumbnail"/>
+      </div>
+      <div class="car-url">
+        <p class="car-name">Make: {{ car.make }}</p>
+        <p class="car-model">Model: {{ car.model }}</p>
+        <p class="car-year">Year: {{ car.year }}</p>
+        <p class="car-price">Price: {{ car.price | currency}}</p>   
+        <div class="car-img" (click)="addToWishList(car.id)"> 
+        <img class="car-favorite" src="assets/heart.png" alt="favorite" >     
+      </div>  
+      </div>
+    </div>
+  </ng-container> 
+</div>

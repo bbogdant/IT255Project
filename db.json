@@ -1,0 +1,52 @@
+{
+  "signup": [
+    {
+      "fname": "user1",
+      "lname": "user1",
+      "email": "user1@gmail.com",
+      "phone": "234324234",
+      "password": "password",
+      "id": 1
+    },
+    {
+      "fname": "user2",
+      "lname": "user2",
+      "email": "user2@gmail.com",
+      "phone": "32432",
+      "password": "password",
+      "id": 2
+    },
+    {
+      "fname": "user3",
+      "lname": "user3",
+      "email": "user3@gmail.com",
+      "phone": "14567",
+      "password": "password",
+      "id": 3
+    },
+    {
+      "fname": "user4",
+      "lname": "user4",
+      "email": "user4@gmail.com",
+      "phone": "123245",
+      "password": "password",
+      "id": 4
+    },
+    {
+      "fname": "bogdan",
+      "lname": "trajkovic",
+      "email": "email@gmail.com",
+      "phone": "3243543",
+      "password": "password",
+      "id": 5
+    },
+    {
+      "fname": "user5",
+      "lname": "user5",
+      "email": "email@gmail.com",
+      "phone": "1232345",
+      "password": "password",
+      "id": 6
+    }
+  ]
+}
