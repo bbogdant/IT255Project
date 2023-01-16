@@ -3,15 +3,9 @@ import { Observable } from 'rxjs';
 import carData from 'src/app/cars.json'
 import { FileService } from 'src/app/services/file.service';
 import { Car } from 'src/app/models';
+import { Router } from '@angular/router';
 
-// interface Car{
-//   id: number;
-//   imageUrl: string;
-//   make: string;
-//   model: string;
-//   year: number;
-//   price: number;
-// }
+
 
 @Component({
   selector: 'app-wishlist',
@@ -25,7 +19,7 @@ export class WishlistComponent implements OnInit {
 
   
 
-  constructor(private fileService: FileService) {
+  constructor(private fileService: FileService, private router: Router) {
     this.wishlist$ = this.fileService.getWishlist();
   }
   
@@ -52,6 +46,6 @@ export class WishlistComponent implements OnInit {
 
   removeFromWishlist(car: Car) {
     this.fileService.removeFromWishlist(car);
-    alert("You have successfully removed the vehicle from the list")
+    alert("You have successfully removed the vehicle from the list");
   }
 }

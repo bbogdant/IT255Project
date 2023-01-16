@@ -6,15 +6,6 @@ import { SessionService } from 'src/app/services/session.service';
 import { Car } from 'src/app/models';
 
 
-// interface Car{
-//   id: number;
-//   imageUrl: string;
-//   make: string;
-//   model: string;
-//   year: number;
-//   price: number;
-// }
-
 exportAs: 'filteredCars'
 
 @Component({
