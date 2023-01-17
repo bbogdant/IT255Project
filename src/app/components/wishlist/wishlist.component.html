@@ -2,7 +2,7 @@
  
   <ng-container *ngFor="let car of (wishlist$ | async)">
     <div class="car">
-      <div  (click)="openCarDetails(car.id)" class="car-thumb-container">
+      <div  class="car-thumb-container">
         <img
          *ngIf="car.make"
           src="{{ car.imageUrl }}"
@@ -14,7 +14,7 @@
         <p class="car-model">Model: {{ car.model }}</p>
         <p class="car-year">Year: {{ car.year }}</p>
         <p class="car-price">Price: {{ car.price | currency}}</p>   
-        <div class="car-img" (click)="addToWishList(car.id)"> 
+        <div> 
         <button *ngIf="isInWishlist(car)" (click)="removeFromWishlist(car)" class="remove-button">Remove from wishlist</button> 
       </div>  
       </div>

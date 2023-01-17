@@ -4,11 +4,6 @@ import { FileService } from 'src/app/services/file.service';
 import { SessionService } from 'src/app/services/session.service';
 import { User } from 'src/app/models';
 
-// interface User{
-//   username: string;
-//   password: string;
-// }
-
 
 @Component({
   selector: 'app-footer',

@@ -33,14 +33,10 @@ export class SingupComponent implements OnInit {
       this.singup.reset();
       this._route.navigate(['/login']);
     }, err=>{
-      alert('Somthing went wrong');
+      alert('Something is wrong');
     })
 
   }
 
-  sbtn(){
-    this._route.navigate(['/login']);
-    $('.form-box').css('display','block');
-    $('.form-box1').css('display','none');
-  }
+  
 }

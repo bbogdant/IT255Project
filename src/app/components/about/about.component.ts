@@ -5,11 +5,7 @@ import { Team } from 'src/app/models';
 
 
 
-// interface Team{
-//   image: string;
-//   name: string;
-//   title: string;
-// }
+
 
 @Component({
   selector: 'app-about',

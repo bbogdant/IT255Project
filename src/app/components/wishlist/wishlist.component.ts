@@ -31,8 +31,6 @@ export class WishlistComponent implements OnInit {
 
   wishlist: Car[];
 
-
-  
   getCar(id: number) {
     if (this.car) {
       this.car = this.car.filter((car) => car.id === id);

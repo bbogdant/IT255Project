@@ -3,14 +3,6 @@ import { Observable, of } from 'rxjs';
 import carData from 'src/app/cars.json'
 import { Car } from '../models';
 
-// interface Car{
-//   id: number;
-//   imageUrl: string;
-//   make: string;
-//   model: string;
-//   year: number;
-//   price: number;
-// }
 
 @Injectable({
   providedIn: 'root'

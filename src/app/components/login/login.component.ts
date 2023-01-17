@@ -32,7 +32,7 @@ export class LoginComponent implements OnInit {
         this.session.login();
         this.login.reset();
         this._route.navigate(['']);
-        // $('.form-box').css('display','none');
+       
         
       }else{
         alert('User Not Found');
@@ -45,11 +45,7 @@ export class LoginComponent implements OnInit {
 
   }
 
-  sbtn1(){
-    $('.form-box').css('display','none');
-    $('.form-box1').css('display','block');
-  }
-
+  
 }
 
 

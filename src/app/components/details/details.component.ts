@@ -6,14 +6,7 @@ import carData from 'src/app/cars.json'
 import { HttpClient } from '@angular/common/http';
 import { Car } from 'src/app/models';
 
-// interface Car{
-//   id: number;
-//   imageUrl: string;
-//   make: string;
-//   model: string;
-//   year: number;
-//   price: number;
-// }
+
 
 @Component({
   selector: 'app-details',

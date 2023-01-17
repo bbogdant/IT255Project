@@ -1,10 +1,6 @@
 import { Injectable } from '@angular/core';
 import { User } from '../models';
 
-// interface User{
-//   username: string;
-//   password: string;
-// }
 
 @Injectable({
   providedIn: 'root'
